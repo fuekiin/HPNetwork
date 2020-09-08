@@ -125,9 +125,9 @@ import AppKit
 extension NetworkRequest where Output == NSImage {
 
     public func convertResponse(response: NetworkResponse) throws -> NSImage {
-        guard let image = NSImage(data: response.data) else {
-            throw NSError.imageError
-        }
+      //  guard let image = NSImage(data: response.data) else {
+      //      throw NSError.imageError
+      //  }
         return image
     }
 

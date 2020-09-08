@@ -119,21 +119,21 @@ extension NetworkRequest where Output == UIImage {
 
 #endif
 
-#if canImport(AppKit)
-import AppKit
-
-extension NetworkRequest where Output == NSImage {
-
-    public func convertResponse(response: NetworkResponse) throws -> NSImage {
-      //  guard let image = NSImage(data: response.data) else {
-      //      throw NSError.imageError
-      //  }
-        return image
-    }
-
-}
-
-#endif
+//#if canImport(AppKit)
+////import AppKit
+////
+////extension NetworkRequest where Output == NSImage {
+////
+////    public func convertResponse(response: NetworkResponse) throws -> NSImage {
+////      //  guard let image = NSImage(data: response.data) else {
+////      //      throw NSError.imageError
+////      //  }
+////        return image
+////    }
+////
+////}
+//
+//#endif
 
 public enum NetworkRequestMethod: String {
 
